@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lumen — Come inside</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="importmap">
+      { "imports": { "three": "/vendor/three.module.js" } }
+    </script>
+  </head>
+  <body>
+    <main id="world" aria-label="Walkable virtual world" tabindex="0"></main>
+    <header>
+      <div class="brand">
+        ✧ <span>LUMEN<small>A WORLD WE CALL HOME</small></span>
+      </div>
+      <div class="top-actions">
+        <button id="mapButton">⌘ Map</button
+        ><button id="viewButton">◉ First person</button
+        ><button id="settingsButton" aria-label="World settings">⚙</button>
+      </div>
+    </header>
+    <section class="location">
+      <span id="place">THE COMMONS</span>
+      <h1 id="placeTitle">Welcome home.</h1>
+      <p id="placeDetail">Walk in. There’s a whole little life here.</p>
+    </section>
+    <aside class="presence">
+      <i id="presenceDot"></i>
+      <div>
+        <strong id="lumenStatus">Finding Lumen…</strong
+        ><span id="lumenDetail">Connecting to your home PC</span>
+      </div>
+      <button id="findLumen" title="Walk to Lumen">↗</button>
+    </aside>
+    <div id="reticle" aria-hidden="true">·</div>
+    <div id="interaction" hidden>
+      <kbd>E</kbd><span id="interactionLabel"></span
+      ><button id="interactButton">Interact</button>
+    </div>
+    <div id="journey" hidden>
+      <span id="journeyLabel"></span
+      ><button id="cancelWalk">Stop walking ×</button>
+    </div>
+    <footer>
+      <div>
+        <kbd>W A S D</kbd> walk <span>·</span> drag to look <span>·</span>
+        <kbd>Shift</kbd> run <span>·</span> <kbd>E</kbd> use <span>·</span>
+        <kbd>V</kbd> view
+      </div>
+      <button id="talkButton">Talk to Lumen <kbd>T</kbd></button>
+    </footer>
+    <div id="touchControls">
+      <button data-move="w" aria-label="Walk forward">↑</button>
+      <div>
+        <button data-move="a" aria-label="Walk left">←</button
+        ><button data-move="s" aria-label="Walk backwards">↓</button
+        ><button data-move="d" aria-label="Walk right">→</button>
+      </div>
+    </div>
+    <dialog id="panel">
+      <button id="closePanel" aria-label="Close">×</button>
+      <p id="panelEyebrow" class="eyebrow"></p>
+      <h2 id="panelTitle"></h2>
+      <div id="panelContent"></div>
+    </dialog>
+    <dialog id="conversation">
+      <button id="closeChat" aria-label="Close conversation">×</button>
+      <div class="chat-head">
+        <span class="orb">✧</span>
+        <div>
+          <p class="eyebrow">A MOMENT TOGETHER</p>
+          <h2>Lumen</h2>
+        </div>
+        <button id="voice" aria-label="Toggle spoken replies">♫</button>
+      </div>
+      <div id="messages" aria-live="polite"></div>
+      <form id="chatForm">
+        <label for="message" class="sr-only">Message Lumen</label
+        ><textarea
+          id="message"
+          placeholder="Tell me what’s on your mind…"
+          rows="2"
+          maxlength="4000"
+          required
+        ></textarea
+        ><button id="send" type="submit">Send ↗</button>
+      </form>
+      <small
+        >Your home PC runs Lumen’s AI. Closing this window doesn’t stop its
+        work.</small
+      >
+    </dialog>
+    <div id="toast" role="status" hidden></div>
+    <div id="loading">
+      <span class="orb">✧</span>
+      <p>Opening the gates…</p>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

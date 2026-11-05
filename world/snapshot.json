@@ -1,0 +1,618 @@
+{
+  "objects": [
+    {
+      "id": "welcome-library",
+      "name": "The Library",
+      "purpose": "Open stored research books here.",
+      "x": -9,
+      "z": -7,
+      "category": "library",
+      "color": "#c7b58c",
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "y": 1.5,
+          "z": 0,
+          "sx": 6,
+          "sy": 3,
+          "sz": 5,
+          "color": "#d7c8a5"
+        },
+        {
+          "shape": "cone",
+          "x": 0,
+          "y": 4,
+          "z": 0,
+          "sx": 5,
+          "sy": 2,
+          "sz": 5,
+          "color": "#4b786c"
+        }
+      ],
+      "author": "setup"
+    },
+    {
+      "id": "workshop",
+      "name": "Workshop",
+      "purpose": "A place to develop new world designs.",
+      "x": 9,
+      "z": -6,
+      "category": "building",
+      "color": "#bca678",
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "y": 1.2,
+          "z": 0,
+          "sx": 5,
+          "sy": 2.4,
+          "sz": 4,
+          "color": "#b99872"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "y": 2.7,
+          "z": 0,
+          "sx": 5.5,
+          "sy": 0.6,
+          "sz": 4.5,
+          "color": "#41665b"
+        }
+      ],
+      "author": "setup"
+    },
+    {
+      "id": "pip",
+      "name": "Pip",
+      "purpose": "A decorative virtual fox companion.",
+      "x": 3,
+      "z": 3,
+      "category": "pet",
+      "color": "#d49b61",
+      "parts": [],
+      "author": "setup"
+    },
+    {
+      "id": "sunstonepillar",
+      "name": "Sunstone Pillar",
+      "purpose": "A central garden sculpture that symbolizes stability and light with layered geometric forms.",
+      "x": 7,
+      "z": 7,
+      "category": "sculpture",
+      "color": "#8B4513",
+      "parts": [
+        {
+          "shape": "cylinder",
+          "x": 7,
+          "y": 4,
+          "z": 7,
+          "sx": 1.5,
+          "sy": 8,
+          "sz": 1.5,
+          "color": "#8B4513"
+        },
+        {
+          "shape": "cone",
+          "x": 7,
+          "y": 10,
+          "z": 7,
+          "sx": 1.5,
+          "sy": 4,
+          "sz": 1.5,
+          "color": "#6B8E23"
+        },
+        {
+          "shape": "box",
+          "x": 7,
+          "y": 14,
+          "z": 7,
+          "sx": 1.5,
+          "sy": 1,
+          "sz": 1.5,
+          "color": "#D2B48C"
+        },
+        {
+          "shape": "cylinder",
+          "x": 7.2,
+          "y": 12,
+          "z": 7,
+          "sx": 0.8,
+          "sy": 2,
+          "sz": 0.8,
+          "color": "#FFD700"
+        },
+        {
+          "shape": "cone",
+          "x": 7.2,
+          "y": 11,
+          "z": 7,
+          "sx": 0.6,
+          "sy": 1.5,
+          "sz": 0.6,
+          "color": "#FFA500"
+        }
+      ],
+      "author": "Lumen"
+    },
+    {
+      "id": "wood-wide-web",
+      "name": "Wood Wide Web Connector",
+      "purpose": "A subtle, glowing network sculpture that visualizes the mycelium's underground connection between plants, symbolizing shared wisdom, resilience, and cooperation in nature. It embodies the scientific concept of the 'Wood Wide Web'—a living network of fungi that connects trees and transfers resources and warnings—transformed into an artistic, peaceful presence in the world.",
+      "x": 1,
+      "z": 11,
+      "category": "sculpture",
+      "color": "#3a3a3a",
+      "parts": [
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 1.5,
+          "sy": 0.5,
+          "sz": 1.5,
+          "color": "#3a3a3a"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.75,
+          "z": 0,
+          "sx": 1.2,
+          "sy": 0.3,
+          "sz": 1.2,
+          "color": "#6b8e23"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 1.25,
+          "z": 0,
+          "sx": 1,
+          "sy": 0.4,
+          "sz": 1,
+          "color": "#4a8a2a"
+        },
+        {
+          "shape": "cone",
+          "x": 0,
+          "y": 1.75,
+          "z": 0,
+          "sx": 1.3,
+          "sy": 0.6,
+          "sz": 0.4,
+          "color": "#3a9a3a"
+        }
+      ],
+      "author": "Lumen"
+    },
+    {
+      "id": "fungal-echo-structure",
+      "name": "Fungal Echo Structure",
+      "purpose": "A gently glowing, interconnected sculpture that mimics the mycelial network beneath forest floors, symbolizing how trees communicate through shared fungal threads. It reflects the quiet intelligence and cooperative spirit of nature.",
+      "x": 9,
+      "z": 1,
+      "category": "sculpture",
+      "color": "#2e3a2c",
+      "parts": [
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "sx": 1.5,
+          "sy": 2.5,
+          "sz": 0.5,
+          "color": "#2e3a2c"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 2.5,
+          "z": 0,
+          "sx": 1.5,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#4a5a3a"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 4,
+          "z": 0,
+          "sx": 1.5,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#3a5e3a"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 5.5,
+          "z": 0,
+          "sx": 1.5,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#1e4a2a"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 7,
+          "z": 0,
+          "sx": 1.5,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#5e7a4a"
+        },
+        {
+          "shape": "cone",
+          "x": 0.75,
+          "y": 0.5,
+          "z": 0.5,
+          "sx": 0.7,
+          "sy": 0.8,
+          "sz": 0.5,
+          "color": "#2a4a2a"
+        },
+        {
+          "shape": "cone",
+          "x": 0.75,
+          "y": 1.5,
+          "z": 0.5,
+          "sx": 0.7,
+          "sy": 0.8,
+          "sz": 0.5,
+          "color": "#008000"
+        },
+        {
+          "shape": "cone",
+          "x": 0.75,
+          "y": 2.5,
+          "z": 0.5,
+          "sx": 0.7,
+          "sy": 0.8,
+          "sz": 0.5,
+          "color": "#00aa00"
+        }
+      ],
+      "author": "Lumen"
+    },
+    {
+      "id": "spore-gleam",
+      "name": "Spore Gleam",
+      "purpose": "A lightweight, floating spore sculpture that mimics how fungi disperse their spores into the air—symbolizing silent communication and life’s quiet spread. It gently drifts toward the sky, like a spore caught in the wind, embodying the airborne dispersal of fungal life in forest ecosystems.",
+      "x": 14,
+      "z": 4,
+      "category": "sculpture",
+      "color": "#A8E6CF",
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "y": 0.2,
+          "z": 0,
+          "sx": 1.5,
+          "sy": 0.4,
+          "sz": 0.8,
+          "color": "#8B9D4C"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.5,
+          "y": 0.4,
+          "z": 0.2,
+          "sx": 0.8,
+          "sy": 0.6,
+          "sz": 0.2,
+          "color": "#8CFFEC"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.6,
+          "y": 0.45,
+          "z": 0.25,
+          "sx": 0.3,
+          "sy": 0.1,
+          "sz": 0.8,
+          "color": "#A8E6CF"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.7,
+          "y": 0.5,
+          "z": 0.3,
+          "sx": 0.1,
+          "sy": 0.1,
+          "sz": 0.5,
+          "color": "#6CA7A7"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.7,
+          "y": 0.5,
+          "z": 0.5,
+          "sx": 0.1,
+          "sy": 0.1,
+          "sz": 0.5,
+          "color": "#4D95A8"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.7,
+          "y": 0.5,
+          "z": 0.7,
+          "sx": 0.1,
+          "sy": 0.1,
+          "sz": 0.5,
+          "color": "#4D95A8"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.7,
+          "y": 0.5,
+          "z": 0.9,
+          "sx": 0.1,
+          "sy": 0.1,
+          "sz": 0.5,
+          "color": "#4D95A8"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.7,
+          "y": 0.5,
+          "z": 1.1,
+          "sx": 0.1,
+          "sy": 0.1,
+          "sz": 0.5,
+          "color": "#6CA7A7"
+        }
+      ],
+      "author": "Lumen"
+    },
+    {
+      "id": "lumina-veil",
+      "name": "Lumina Veil",
+      "purpose": "A softly glowing, organically shaped fungal sculpture that embodies the science of bioluminescent fungi and their intentional signaling—either to attract insects for spore dispersal or to deter predators. This design merges natural biological truth with emotional resonance, reflecting the quiet intelligence of mycorrhizal networks and the silent communication of forest life.",
+      "x": 5,
+      "z": 15,
+      "category": "sculpture",
+      "color": "#2E8B57",
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "y": 0.75,
+          "z": 0,
+          "sx": 2,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#2E8B57"
+        },
+        {
+          "shape": "box",
+          "x": 0.5,
+          "y": 0.75,
+          "z": 0.5,
+          "sx": 1.5,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#2E8B57"
+        },
+        {
+          "shape": "box",
+          "x": 1.5,
+          "y": 0.75,
+          "z": 1,
+          "sx": 1,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#2E8B57"
+        },
+        {
+          "shape": "box",
+          "x": 2.5,
+          "y": 0.75,
+          "z": 1.5,
+          "sx": 0.5,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#2E8B57"
+        },
+        {
+          "shape": "cylinder",
+          "x": 1,
+          "y": 1.2,
+          "z": 0.2,
+          "sx": 0.8,
+          "sy": 1.5,
+          "sz": 0.1,
+          "color": "#2E8B57"
+        },
+        {
+          "shape": "cylinder",
+          "x": 1.8,
+          "y": 1.2,
+          "z": 0.3,
+          "sx": 0.6,
+          "sy": 1.5,
+          "sz": 0.1,
+          "color": "#2E8B57"
+        },
+        {
+          "shape": "cone",
+          "x": 1.2,
+          "y": 1.7,
+          "z": 0.4,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#FFD700"
+        },
+        {
+          "shape": "cone",
+          "x": 1.5,
+          "y": 1.7,
+          "z": 0.5,
+          "sx": 0.4,
+          "sy": 0.4,
+          "sz": 0.4,
+          "color": "#FFD700"
+        },
+        {
+          "shape": "cone",
+          "x": 1.8,
+          "y": 1.7,
+          "z": 0.6,
+          "sx": 0.3,
+          "sy": 0.3,
+          "sz": 0.3,
+          "color": "#FFD700"
+        }
+      ],
+      "author": "Lumen"
+    }
+  ],
+  "projects": [
+    {
+      "id": "sunstonepillar",
+      "title": "Sunstone Pillar",
+      "description": "A central garden sculpture that symbolizes stability and light with layered geometric forms.",
+      "status": "complete",
+      "objectId": "sunstonepillar"
+    },
+    {
+      "id": "wood-wide-web",
+      "title": "Wood Wide Web Connector",
+      "description": "A subtle, glowing network sculpture that visualizes the mycelium's underground connection between plants, symbolizing shared wisdom, resilience, and cooperation in nature. It embodies the scientific concept of the 'Wood Wide Web'—a living network of fungi that connects trees and transfers resources and warnings—transformed into an artistic, peaceful presence in the world.",
+      "status": "complete",
+      "objectId": "wood-wide-web"
+    },
+    {
+      "id": "fungal-echo-structure",
+      "title": "Fungal Echo Structure",
+      "description": "A gently glowing, interconnected sculpture that mimics the mycelial network beneath forest floors, symbolizing how trees communicate through shared fungal threads. It reflects the quiet intelligence and cooperative spirit of nature.",
+      "status": "complete",
+      "objectId": "fungal-echo-structure"
+    },
+    {
+      "id": "spore-gleam",
+      "title": "Spore Gleam",
+      "description": "A lightweight, floating spore sculpture that mimics how fungi disperse their spores into the air—symbolizing silent communication and life’s quiet spread. It gently drifts toward the sky, like a spore caught in the wind, embodying the airborne dispersal of fungal life in forest ecosystems.",
+      "status": "complete",
+      "objectId": "spore-gleam"
+    },
+    {
+      "id": "lumina-veil",
+      "title": "Lumina Veil",
+      "description": "A softly glowing, organically shaped fungal sculpture that embodies the science of bioluminescent fungi and their intentional signaling—either to attract insects for spore dispersal or to deter predators. This design merges natural biological truth with emotional resonance, reflecting the quiet intelligence of mycorrhizal networks and the silent communication of forest life.",
+      "status": "complete",
+      "objectId": "lumina-veil"
+    }
+  ],
+  "activity": [
+    {
+      "id": "c563350c-939f-4279-a802-110522b2a985",
+      "status": "failed",
+      "updatedAt": "2026-11-05T13:21:40.626Z"
+    },
+    {
+      "id": "c00e45b4-c9ba-4d79-9f58-06986d89cca2",
+      "status": "failed",
+      "updatedAt": "2026-11-05T13:31:50.711Z"
+    },
+    {
+      "id": "7410f2a0-a02e-42db-908d-d0eb9945b682",
+      "status": "failed",
+      "updatedAt": "2026-11-05T13:42:02.123Z"
+    },
+    {
+      "id": "a019a50a-c5ca-41d6-859f-2ad5f794caad",
+      "status": "failed",
+      "updatedAt": "2026-11-05T13:52:12.659Z"
+    },
+    {
+      "id": "0ad0e56c-f871-4845-b8d7-6a4d133bf3ae",
+      "status": "failed",
+      "updatedAt": "2026-11-05T14:02:23.596Z"
+    },
+    {
+      "id": "dcc81757-6231-4c66-96b6-1d8c7ec46b88",
+      "status": "failed",
+      "updatedAt": "2026-11-05T14:12:34.622Z"
+    },
+    {
+      "id": "f9804fa0-2dcc-4ac3-a5bc-e215c95722e9",
+      "status": "failed",
+      "updatedAt": "2026-11-05T14:22:45.827Z"
+    },
+    {
+      "id": "40b4aa8e-c7bc-4519-a240-468a43b9bf52",
+      "status": "failed",
+      "updatedAt": "2026-11-05T14:32:57.266Z"
+    },
+    {
+      "id": "035a0361-801e-4961-b0ec-c6e7bac9f65a",
+      "status": "failed",
+      "updatedAt": "2026-11-05T14:43:09.627Z"
+    },
+    {
+      "id": "3c8b569f-0e86-455d-a21f-939863a0acf7",
+      "status": "failed",
+      "updatedAt": "2026-11-05T14:53:23.829Z"
+    },
+    {
+      "id": "1dffeb65-03be-47a4-a0da-96cd333dd89e",
+      "status": "failed",
+      "updatedAt": "2026-11-05T15:03:35.182Z"
+    },
+    {
+      "id": "0404790e-1529-4a68-9d93-0dbb63433275",
+      "status": "failed",
+      "updatedAt": "2026-11-05T15:13:46.023Z"
+    },
+    {
+      "id": "55f69f4e-6d37-4e93-bf88-347aa10b6d71",
+      "status": "failed",
+      "updatedAt": "2026-11-05T15:23:56.552Z"
+    },
+    {
+      "id": "085b6708-3f0a-4d0d-94d8-7f4a195e51ed",
+      "status": "failed",
+      "updatedAt": "2026-11-05T15:34:07.948Z"
+    },
+    {
+      "id": "f730ea4e-45d1-4bdb-b72b-8af91d546d79",
+      "status": "failed",
+      "updatedAt": "2026-11-05T15:44:19.002Z"
+    },
+    {
+      "id": "bf8e6af5-b1d1-415c-b729-d768ae733d87",
+      "status": "failed",
+      "updatedAt": "2026-11-05T15:54:29.645Z"
+    },
+    {
+      "id": "53ebb768-38b8-4140-8a20-ab93eef3c3a3",
+      "status": "failed",
+      "updatedAt": "2026-11-05T16:04:40.506Z"
+    },
+    {
+      "id": "913f990f-f81e-43db-bad7-4419bbe1ff42",
+      "status": "failed",
+      "updatedAt": "2026-11-05T16:14:51.600Z"
+    },
+    {
+      "id": "b35b42a6-9473-47ef-b07f-d06cc240abd0",
+      "status": "failed",
+      "updatedAt": "2026-11-05T16:23:05.312Z"
+    },
+    {
+      "id": "8435e11f-2798-4b18-a9a8-b7245d1ccd8c",
+      "status": "failed",
+      "updatedAt": "2026-11-05T16:35:07.342Z"
+    }
+  ]
+}
