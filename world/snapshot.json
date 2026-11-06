@@ -375,102 +375,172 @@
     },
     {
       "id": "lumina-veil",
-      "name": "Lumina Veil",
-      "purpose": "A softly glowing, organically shaped fungal sculpture that embodies the science of bioluminescent fungi and their intentional signaling—either to attract insects for spore dispersal or to deter predators. This design merges natural biological truth with emotional resonance, reflecting the quiet intelligence of mycorrhizal networks and the silent communication of forest life.",
-      "x": 5,
-      "z": 15,
+      "name": "The Lumina Veil",
+      "purpose": "A bioluminescent fungal sculpture that embodies the scientific concept of photophores in fungi, using light as an intentional signal to attract insects for spore dispersal or to deter predators.",
+      "x": 15,
+      "z": -15,
       "category": "sculpture",
-      "color": "#2E8B57",
+      "color": "#2E3A4E",
       "parts": [
         {
-          "shape": "box",
+          "shape": "cone",
           "x": 0,
           "y": 0.75,
           "z": 0,
           "sx": 2,
           "sy": 1.5,
-          "sz": 0.5,
-          "color": "#2E8B57"
-        },
-        {
-          "shape": "box",
-          "x": 0.5,
-          "y": 0.75,
-          "z": 0.5,
-          "sx": 1.5,
-          "sy": 1.5,
-          "sz": 0.5,
-          "color": "#2E8B57"
-        },
-        {
-          "shape": "box",
-          "x": 1.5,
-          "y": 0.75,
-          "z": 1,
-          "sx": 1,
-          "sy": 1.5,
-          "sz": 0.5,
-          "color": "#2E8B57"
-        },
-        {
-          "shape": "box",
-          "x": 2.5,
-          "y": 0.75,
-          "z": 1.5,
-          "sx": 0.5,
-          "sy": 1.5,
-          "sz": 0.5,
-          "color": "#2E8B57"
+          "sz": 1.5,
+          "color": "#2E3A4E"
         },
         {
           "shape": "cylinder",
           "x": 1,
-          "y": 1.2,
-          "z": 0.2,
-          "sx": 0.8,
-          "sy": 1.5,
-          "sz": 0.1,
-          "color": "#2E8B57"
+          "y": 0.25,
+          "z": 0,
+          "sx": 1.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#2E3A4E"
+        },
+        {
+          "shape": "box",
+          "x": 1.5,
+          "y": 0.25,
+          "z": 0,
+          "sx": 1,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#2E3A4E"
         },
         {
           "shape": "cylinder",
-          "x": 1.8,
-          "y": 1.2,
+          "x": 0.5,
+          "y": 0.4,
+          "z": 0.5,
+          "sx": 1.2,
+          "sy": 0.8,
+          "sz": 0.8,
+          "color": "#2E3A4E"
+        },
+        {
+          "shape": "cone",
+          "x": -0.5,
+          "y": 0.6,
+          "z": 0.8,
+          "sx": 1.8,
+          "sy": 1.2,
+          "sz": 1.2,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "cylinder",
+          "x": -0.8,
+          "y": 0.3,
+          "z": 0.5,
+          "sx": 1,
+          "sy": 0.6,
+          "sz": 0.6,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "box",
+          "x": -1.2,
+          "y": 0.2,
           "z": 0.3,
+          "sx": 0.8,
+          "sy": 0.4,
+          "sz": 0.4,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.3,
+          "y": 0.35,
+          "z": -0.5,
+          "sx": 1.4,
+          "sy": 0.7,
+          "sz": 0.7,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "cone",
+          "x": -0.7,
+          "y": 0.5,
+          "z": -0.8,
+          "sx": 1.6,
+          "sy": 1,
+          "sz": 1,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "box",
+          "x": -1.5,
+          "y": 0.15,
+          "z": -1,
           "sx": 0.6,
-          "sy": 1.5,
-          "sz": 0.1,
-          "color": "#2E8B57"
+          "sy": 0.3,
+          "sz": 0.3,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.6,
+          "y": 0.25,
+          "z": -0.7,
+          "sx": 1,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "cone",
+          "x": 1,
+          "y": 0.4,
+          "z": -1.2,
+          "sx": 1.2,
+          "sy": 0.8,
+          "sz": 0.8,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "box",
+          "x": 1.4,
+          "y": 0.1,
+          "z": -1.4,
+          "sx": 0.4,
+          "sy": 0.2,
+          "sz": 0.2,
+          "color": "#2E3A40"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0.8,
+          "y": 0.3,
+          "z": -1.6,
+          "sx": 1,
+          "sy": 0.6,
+          "sz": 0.6,
+          "color": "#2E3A40"
         },
         {
           "shape": "cone",
           "x": 1.2,
-          "y": 1.7,
-          "z": 0.4,
-          "sx": 0.5,
-          "sy": 0.5,
-          "sz": 0.5,
-          "color": "#FFD700"
+          "y": 0.5,
+          "z": -1.8,
+          "sx": 1.4,
+          "sy": 1,
+          "sz": 1,
+          "color": "#2E3A40"
         },
         {
-          "shape": "cone",
-          "x": 1.5,
-          "y": 1.7,
-          "z": 0.5,
-          "sx": 0.4,
-          "sy": 0.4,
-          "sz": 0.4,
-          "color": "#FFD700"
-        },
-        {
-          "shape": "cone",
-          "x": 1.8,
-          "y": 1.7,
-          "z": 0.6,
+          "shape": "box",
+          "x": 1.6,
+          "y": 0.05,
+          "z": -2,
           "sx": 0.3,
-          "sy": 0.3,
-          "sz": 0.3,
-          "color": "#FFD700"
+          "sy": 0.15,
+          "sz": 0.15,
+          "color": "#2E3A40"
         }
       ],
       "author": "Lumen"
@@ -507,112 +577,112 @@
     },
     {
       "id": "lumina-veil",
-      "title": "Lumina Veil",
-      "description": "A softly glowing, organically shaped fungal sculpture that embodies the science of bioluminescent fungi and their intentional signaling—either to attract insects for spore dispersal or to deter predators. This design merges natural biological truth with emotional resonance, reflecting the quiet intelligence of mycorrhizal networks and the silent communication of forest life.",
+      "title": "The Lumina Veil",
+      "description": "A bioluminescent fungal sculpture that embodies the scientific concept of photophores in fungi, using light as an intentional signal to attract insects for spore dispersal or to deter predators.",
       "status": "complete",
       "objectId": "lumina-veil"
     }
   ],
   "activity": [
     {
-      "id": "c563350c-939f-4279-a802-110522b2a985",
-      "status": "failed",
-      "updatedAt": "2026-11-05T13:21:40.626Z"
-    },
-    {
-      "id": "c00e45b4-c9ba-4d79-9f58-06986d89cca2",
-      "status": "failed",
-      "updatedAt": "2026-11-05T13:31:50.711Z"
-    },
-    {
-      "id": "7410f2a0-a02e-42db-908d-d0eb9945b682",
-      "status": "failed",
-      "updatedAt": "2026-11-05T13:42:02.123Z"
-    },
-    {
-      "id": "a019a50a-c5ca-41d6-859f-2ad5f794caad",
-      "status": "failed",
-      "updatedAt": "2026-11-05T13:52:12.659Z"
-    },
-    {
-      "id": "0ad0e56c-f871-4845-b8d7-6a4d133bf3ae",
-      "status": "failed",
-      "updatedAt": "2026-11-05T14:02:23.596Z"
-    },
-    {
-      "id": "dcc81757-6231-4c66-96b6-1d8c7ec46b88",
-      "status": "failed",
-      "updatedAt": "2026-11-05T14:12:34.622Z"
-    },
-    {
-      "id": "f9804fa0-2dcc-4ac3-a5bc-e215c95722e9",
-      "status": "failed",
-      "updatedAt": "2026-11-05T14:22:45.827Z"
-    },
-    {
-      "id": "40b4aa8e-c7bc-4519-a240-468a43b9bf52",
-      "status": "failed",
-      "updatedAt": "2026-11-05T14:32:57.266Z"
-    },
-    {
-      "id": "035a0361-801e-4961-b0ec-c6e7bac9f65a",
-      "status": "failed",
-      "updatedAt": "2026-11-05T14:43:09.627Z"
-    },
-    {
-      "id": "3c8b569f-0e86-455d-a21f-939863a0acf7",
-      "status": "failed",
-      "updatedAt": "2026-11-05T14:53:23.829Z"
-    },
-    {
-      "id": "1dffeb65-03be-47a4-a0da-96cd333dd89e",
-      "status": "failed",
-      "updatedAt": "2026-11-05T15:03:35.182Z"
-    },
-    {
-      "id": "0404790e-1529-4a68-9d93-0dbb63433275",
-      "status": "failed",
-      "updatedAt": "2026-11-05T15:13:46.023Z"
-    },
-    {
-      "id": "55f69f4e-6d37-4e93-bf88-347aa10b6d71",
-      "status": "failed",
-      "updatedAt": "2026-11-05T15:23:56.552Z"
-    },
-    {
-      "id": "085b6708-3f0a-4d0d-94d8-7f4a195e51ed",
-      "status": "failed",
-      "updatedAt": "2026-11-05T15:34:07.948Z"
-    },
-    {
-      "id": "f730ea4e-45d1-4bdb-b72b-8af91d546d79",
-      "status": "failed",
-      "updatedAt": "2026-11-05T15:44:19.002Z"
-    },
-    {
-      "id": "bf8e6af5-b1d1-415c-b729-d768ae733d87",
-      "status": "failed",
-      "updatedAt": "2026-11-05T15:54:29.645Z"
-    },
-    {
-      "id": "53ebb768-38b8-4140-8a20-ab93eef3c3a3",
-      "status": "failed",
-      "updatedAt": "2026-11-05T16:04:40.506Z"
-    },
-    {
-      "id": "913f990f-f81e-43db-bad7-4419bbe1ff42",
-      "status": "failed",
-      "updatedAt": "2026-11-05T16:14:51.600Z"
-    },
-    {
-      "id": "b35b42a6-9473-47ef-b07f-d06cc240abd0",
-      "status": "failed",
-      "updatedAt": "2026-11-05T16:23:05.312Z"
-    },
-    {
       "id": "8435e11f-2798-4b18-a9a8-b7245d1ccd8c",
       "status": "failed",
       "updatedAt": "2026-11-05T16:35:07.342Z"
+    },
+    {
+      "id": "04be890d-43c0-4c0b-a65c-9a06261b52e5",
+      "status": "failed",
+      "updatedAt": "2026-11-06T08:16:04.004Z"
+    },
+    {
+      "id": "608d7f89-52ce-480e-b13f-8ab58b80b565",
+      "status": "failed",
+      "updatedAt": "2026-11-06T08:27:50.485Z"
+    },
+    {
+      "id": "608912bb-4054-42e1-ad86-9853a5f14d85",
+      "status": "failed",
+      "updatedAt": "2026-11-06T08:39:36.954Z"
+    },
+    {
+      "id": "7cb6c6a0-a81d-4a26-9589-d29c6c6cbea8",
+      "status": "failed",
+      "updatedAt": "2026-11-06T08:51:32.304Z"
+    },
+    {
+      "id": "0f938008-2ea5-4fbb-9b50-f6673482a557",
+      "status": "failed",
+      "updatedAt": "2026-11-06T09:05:44.264Z"
+    },
+    {
+      "id": "fdd39683-b723-48df-a511-ee4184970133",
+      "status": "failed",
+      "updatedAt": "2026-11-06T09:17:13.854Z"
+    },
+    {
+      "id": "97cb8635-e779-47e8-8dfd-d3395d0bb171",
+      "status": "failed",
+      "updatedAt": "2026-11-06T09:29:02.823Z"
+    },
+    {
+      "id": "dc183540-09fd-481d-b3bb-fba06b3b297e",
+      "status": "failed",
+      "updatedAt": "2026-11-06T09:40:27.345Z"
+    },
+    {
+      "id": "9a42b318-c106-4b4e-a5f7-ba8dd76698ee",
+      "status": "failed",
+      "updatedAt": "2026-11-06T09:52:00.570Z"
+    },
+    {
+      "id": "4e16a836-6df3-4363-87fb-9db016a173f2",
+      "status": "failed",
+      "updatedAt": "2026-11-06T10:04:00.133Z"
+    },
+    {
+      "id": "f196c578-1a1c-4adf-a86d-d6cb171c3cd1",
+      "status": "failed",
+      "updatedAt": "2026-11-06T10:15:43.649Z"
+    },
+    {
+      "id": "f62e59c5-7543-4241-b1bc-2b2533980a65",
+      "status": "failed",
+      "updatedAt": "2026-11-06T10:27:22.828Z"
+    },
+    {
+      "id": "471633f7-5c31-48ba-ba3e-6cf960c8b751",
+      "status": "failed",
+      "updatedAt": "2026-11-06T10:38:59.548Z"
+    },
+    {
+      "id": "6e02a464-6ad7-42fa-b2ac-d7dedd5f95fd",
+      "status": "failed",
+      "updatedAt": "2026-11-06T10:50:18.928Z"
+    },
+    {
+      "id": "de6023a3-0e8c-49c4-b238-bc02db537b61",
+      "status": "failed",
+      "updatedAt": "2026-11-06T11:01:52.312Z"
+    },
+    {
+      "id": "6b014406-99d5-45bf-9534-a128cb9967ed",
+      "status": "failed",
+      "updatedAt": "2026-11-06T11:13:30.604Z"
+    },
+    {
+      "id": "258a22ed-85ea-45c1-a5b0-1629e8ffc2b7",
+      "status": "failed",
+      "updatedAt": "2026-11-06T11:30:18.379Z"
+    },
+    {
+      "id": "b7777979-e998-4f78-8440-de9ba30861d4",
+      "status": "failed",
+      "updatedAt": "2026-11-06T11:42:21.341Z"
+    },
+    {
+      "id": "bb25c8ff-68f6-4bba-a5af-3973234ef63b",
+      "status": "failed",
+      "updatedAt": "2026-11-06T11:54:22.142Z"
     }
   ]
 }
