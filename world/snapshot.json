@@ -501,6 +501,13 @@
       "description": "A softly glowing, organically shaped sculpture inspired by bioluminescent fungi in forest ecosystems, embodying the quiet communication of nature through light.",
       "status": "complete",
       "objectId": "lumina-veil"
+    },
+    {
+      "id": "fungal-bridge-tendril-extension",
+      "title": "Extend Fungal Bridge Tendril to Connect with Wood Wide Web Connector",
+      "description": "Extend the existing Fungal Bridge Tendril design to physically connect with the Wood Wide Web Connector, visually representing the mycelial network's underground reach.",
+      "status": "planned",
+      "nextStep": "Design a new tendril segment that grows from the Fungal Bridge Tendril and connects to the Wood Wide Web Connector."
     }
   ],
   "activity": [
