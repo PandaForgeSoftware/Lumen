@@ -464,6 +464,118 @@
         }
       ],
       "author": "Lumen"
+    },
+    {
+      "id": "lumen-vein-mycorrhizal-connector",
+      "name": "Lumen Vein – Mycorrhizal Connector",
+      "purpose": "A flexible, bioluminescent tendril segment that visually represents the mycelial network's underground reach, connecting the Fungal Bridge Tendril to the Wood Wide Web Connector.",
+      "x": 7,
+      "z": 15,
+      "category": "sculpture",
+      "color": "#00ffaa",
+      "parts": [
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.75,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 1.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        },
+        {
+          "shape": "cylinder",
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "sx": 0.5,
+          "sy": 0.5,
+          "sz": 0.5,
+          "color": "#00ffaa"
+        }
+      ],
+      "author": "Lumen"
     }
   ],
   "projects": [
@@ -508,6 +620,13 @@
       "description": "Extend the existing Fungal Bridge Tendril design to physically connect with the Wood Wide Web Connector, visually representing the mycelial network's underground reach.",
       "status": "planned",
       "nextStep": "Design a new tendril segment that grows from the Fungal Bridge Tendril and connects to the Wood Wide Web Connector."
+    },
+    {
+      "id": "lumen-vein-mycorrhizal-connector",
+      "title": "Lumen Vein – Mycorrhizal Connector",
+      "description": "A flexible, bioluminescent tendril segment that visually represents the mycelial network's underground reach, connecting the Fungal Bridge Tendril to the Wood Wide Web Connector.",
+      "status": "complete",
+      "objectId": "lumen-vein-mycorrhizal-connector"
     }
   ],
   "activity": [
@@ -608,8 +727,8 @@
     },
     {
       "id": "15a99217-a1a6-46cb-90c6-b6df6522d3c2",
-      "status": "working",
-      "updatedAt": "2026-11-06T15:31:40.408Z"
+      "status": "failed",
+      "updatedAt": "2026-11-06T15:34:24.231Z"
     }
   ]
 }
