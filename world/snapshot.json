@@ -376,11 +376,11 @@
     {
       "id": "lumina-veil",
       "name": "The Lumina Veil",
-      "purpose": "A bioluminescent fungal sculpture that embodies the scientific concept of photophores in fungi, using light as an intentional signal to attract insects for spore dispersal or to deter predators.",
+      "purpose": "A softly glowing, organically shaped sculpture inspired by bioluminescent fungi in forest ecosystems, embodying the quiet communication of nature through light.",
       "x": 15,
-      "z": -15,
+      "z": -20,
       "category": "sculpture",
-      "color": "#2E3A4E",
+      "color": "#2E3436",
       "parts": [
         {
           "shape": "cone",
@@ -390,157 +390,77 @@
           "sx": 2,
           "sy": 1.5,
           "sz": 1.5,
-          "color": "#2E3A4E"
+          "color": "#00FFAA"
         },
         {
           "shape": "cylinder",
-          "x": 1,
-          "y": 0.25,
-          "z": 0,
+          "x": 1.2,
+          "y": 1.2,
+          "z": 0.5,
           "sx": 1.5,
-          "sy": 0.5,
-          "sz": 0.5,
-          "color": "#2E3A4E"
-        },
-        {
-          "shape": "box",
-          "x": 1.5,
-          "y": 0.25,
-          "z": 0,
-          "sx": 1,
-          "sy": 0.5,
-          "sz": 0.5,
-          "color": "#2E3A4E"
-        },
-        {
-          "shape": "cylinder",
-          "x": 0.5,
-          "y": 0.4,
-          "z": 0.5,
-          "sx": 1.2,
-          "sy": 0.8,
-          "sz": 0.8,
-          "color": "#2E3A4E"
-        },
-        {
-          "shape": "cone",
-          "x": -0.5,
-          "y": 0.6,
-          "z": 0.8,
-          "sx": 1.8,
-          "sy": 1.2,
-          "sz": 1.2,
-          "color": "#2E3A40"
-        },
-        {
-          "shape": "cylinder",
-          "x": -0.8,
-          "y": 0.3,
-          "z": 0.5,
-          "sx": 1,
-          "sy": 0.6,
-          "sz": 0.6,
-          "color": "#2E3A40"
-        },
-        {
-          "shape": "box",
-          "x": -1.2,
-          "y": 0.2,
-          "z": 0.3,
-          "sx": 0.8,
-          "sy": 0.4,
-          "sz": 0.4,
-          "color": "#2E3A40"
-        },
-        {
-          "shape": "cylinder",
-          "x": 0.3,
-          "y": 0.35,
-          "z": -0.5,
-          "sx": 1.4,
-          "sy": 0.7,
-          "sz": 0.7,
-          "color": "#2E3A40"
-        },
-        {
-          "shape": "cone",
-          "x": -0.7,
-          "y": 0.5,
-          "z": -0.8,
-          "sx": 1.6,
           "sy": 1,
-          "sz": 1,
-          "color": "#2E3A40"
-        },
-        {
-          "shape": "box",
-          "x": -1.5,
-          "y": 0.15,
-          "z": -1,
-          "sx": 0.6,
-          "sy": 0.3,
-          "sz": 0.3,
-          "color": "#2E3A40"
+          "sz": 0.5,
+          "color": "#00FFAA"
         },
         {
           "shape": "cylinder",
-          "x": 0.6,
-          "y": 0.25,
-          "z": -0.7,
-          "sx": 1,
-          "sy": 0.5,
+          "x": -1.2,
+          "y": 0.8,
+          "z": 0.5,
+          "sx": 1.5,
+          "sy": 1,
           "sz": 0.5,
-          "color": "#2E3A40"
-        },
-        {
-          "shape": "cone",
-          "x": 1,
-          "y": 0.4,
-          "z": -1.2,
-          "sx": 1.2,
-          "sy": 0.8,
-          "sz": 0.8,
-          "color": "#2E3A40"
+          "color": "#00FFAA"
         },
         {
           "shape": "box",
-          "x": 1.4,
-          "y": 0.1,
-          "z": -1.4,
-          "sx": 0.4,
-          "sy": 0.2,
-          "sz": 0.2,
-          "color": "#2E3A40"
+          "x": 0.5,
+          "y": 1.8,
+          "z": 1.2,
+          "sx": 1.8,
+          "sy": 0.8,
+          "sz": 0.8,
+          "color": "#00FFAA"
+        },
+        {
+          "shape": "box",
+          "x": -0.5,
+          "y": 1.8,
+          "z": 1.2,
+          "sx": 1.8,
+          "sy": 0.8,
+          "sz": 0.8,
+          "color": "#00FFAA"
         },
         {
           "shape": "cylinder",
           "x": 0.8,
-          "y": 0.3,
-          "z": -1.6,
-          "sx": 1,
-          "sy": 0.6,
-          "sz": 0.6,
-          "color": "#2E3A40"
+          "y": 1.8,
+          "z": 1.5,
+          "sx": 1.5,
+          "sy": 1,
+          "sz": 0.5,
+          "color": "#00FFAA"
         },
         {
-          "shape": "cone",
-          "x": 1.2,
-          "y": 0.5,
-          "z": -1.8,
-          "sx": 1.4,
+          "shape": "cylinder",
+          "x": -0.8,
+          "y": 1.8,
+          "z": 1.5,
+          "sx": 1.5,
           "sy": 1,
-          "sz": 1,
-          "color": "#2E3A40"
+          "sz": 0.5,
+          "color": "#00FFAA"
         },
         {
           "shape": "box",
-          "x": 1.6,
-          "y": 0.05,
-          "z": -2,
-          "sx": 0.3,
-          "sy": 0.15,
-          "sz": 0.15,
-          "color": "#2E3A40"
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "sx": 3,
+          "sy": 1,
+          "sz": 2,
+          "color": "#2E3436"
         }
       ],
       "author": "Lumen"
@@ -578,17 +498,12 @@
     {
       "id": "lumina-veil",
       "title": "The Lumina Veil",
-      "description": "A bioluminescent fungal sculpture that embodies the scientific concept of photophores in fungi, using light as an intentional signal to attract insects for spore dispersal or to deter predators.",
+      "description": "A softly glowing, organically shaped sculpture inspired by bioluminescent fungi in forest ecosystems, embodying the quiet communication of nature through light.",
       "status": "complete",
       "objectId": "lumina-veil"
     }
   ],
   "activity": [
-    {
-      "id": "8435e11f-2798-4b18-a9a8-b7245d1ccd8c",
-      "status": "failed",
-      "updatedAt": "2026-11-05T16:35:07.342Z"
-    },
     {
       "id": "04be890d-43c0-4c0b-a65c-9a06261b52e5",
       "status": "failed",
@@ -683,6 +598,11 @@
       "id": "bb25c8ff-68f6-4bba-a5af-3973234ef63b",
       "status": "failed",
       "updatedAt": "2026-11-06T11:54:22.142Z"
+    },
+    {
+      "id": "6bf56e0b-1f9d-478b-b8c1-45ff8a5db8c7",
+      "status": "complete",
+      "updatedAt": "2026-11-06T12:06:20.665Z"
     }
   ]
 }
