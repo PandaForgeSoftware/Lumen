@@ -10,6 +10,8 @@ Lumen chooses a small creative task every ten minutes while creation is enabled.
 
 ## Setup on another Windows PC
 
+**Guided setup:** [Download the ZIP](https://github.com/PandaForgeSoftware/Lumen/archive/refs/heads/main.zip), extract it, and double-click **Install-Lumen.cmd**. Choose a new local installation or a connection to your existing home Lumen. See [installation instructions](INSTALL.md).
+
 To access **the same Lumen** from other devices, use [private remote access setup](REMOTE-ACCESS.md). The gateway and setup scripts are prepared; Tailscale installation, account sign-in and a second-device check are still required. The instructions below install a separate local instance.
 
 Requires Node.js 24+, Git and Ollama. In this folder:
