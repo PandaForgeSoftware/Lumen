@@ -814,6 +814,14 @@ function showLibrary() {
 }
 function showProjects() {
   const holder = panel("On the drawing board", "THE WORKSHOP");
+  for (const helper of data?.helpers || []) {
+    const card = el("article", null, "entry");
+    const job = (data.helperJobs || []).filter(j => j.helperId === helper.id).at(-1);
+    card.append(el("h3", helper.name + " · AI helper"), el("p", helper.specialty),
+      el("small", job ? "Latest task: " + job.status : "Ready for a task"));
+    if (job?.result) card.append(el("p", job.result));
+    holder.append(card);
+  }
   for (const task of (data?.tasks || []).filter((t) =>
     ["queued", "working"].includes(t.status),
   )) {
@@ -833,6 +841,7 @@ function showProjects() {
   for (const p of data?.projects || []) {
     const c = el("article", null, "entry");
     c.append(el("h3", p.title), el("small", p.status), el("p", p.description));
+    if (p.nextStep) c.append(el("p", "Next: " + p.nextStep));
     const item = data.objects.find((o) => o.id === p.objectId);
     if (item) {
       const b = el("button", "Walk to this creation ↗");
@@ -1037,6 +1046,7 @@ async function refresh() {
   }
 }
 $("mapButton").onclick = showMap;
+$("projectsButton").onclick = showProjects;
 $("settingsButton").onclick = showSettings;
 $("talkButton").onclick = openChat;
 $("findLumen").onclick = () =>
