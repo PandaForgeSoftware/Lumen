@@ -151,12 +151,12 @@ async function work() {
   });
   let timeout;
   try {
-    const recent = all("messages")
+    const recent = (task.source === "autonomy" ? [] : all("messages"))
       .slice(-6)
       .map((m) => ({ role: m.role, text: m.text }));
     const started = await client.sessions.create({
       message: task.message,
-      clientContext: { memories: all("memory"), recentConversation: recent },
+      clientContext: { memories: all("memory").slice(-12).map(({id,text})=>({id,text:text.slice(0,220)})), recentConversation: recent },
       signal: AbortSignal.timeout(30000),
     });
     currentSession = started.session;

@@ -834,7 +834,7 @@ function showProjects() {
           : "A request in progress",
       ),
       el("small", task.status),
-      el("p", task.message),
+        el("p", task.source === "autonomy" ? "Choosing a project and making the next useful improvement to the world." : task.message),
     );
     holder.append(c);
   }
