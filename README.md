@@ -38,6 +38,10 @@ Microphone input, authenticated remote access from phones/tablets/other computer
 
 ## Data and GitHub
 
+Lumen's model, worker and world run locally without ChatGPT. Once connected to GitHub, background uploads use Windows' saved credential and never ask a chat service to publish. Run `Connect-GitHub.ps1` once and sign into **PandaForgeSoftware**. GitHub requires this initial authorization; anonymous uploads are not supported. The script verifies repository access before enabling automatic snapshots.
+
+Lumen can use `build_building` to create furnished, enterable rooms with clear doorways. Generated floors are walkable and roofs hide while the visitor is inside.
+
 The configured repository is public: https://github.com/PandaForgeSoftware/Lumen.
 
 `data/` and `.eve/` contain private local state and are ignored by Git. Never commit these folders. Snapshots include autonomous designs, their project descriptions, and creative task status. Treat these design names and descriptions as public. Owner-requested objects are excluded from automatic snapshots. Conversations, memory records, research excerpts and runtime logs are not exported. GitHub is version history, not the cross-device database. Back up `data/` separately with the app stopped. The UI is bound to loopback; do not expose either local port to the internet without adding authentication and a secure transport.

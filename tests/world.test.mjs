@@ -9,6 +9,14 @@ process.env.LUMEN_DATA_DIR = directory;
 const { get, put, all, settings } = await import("../lib/store.mjs");
 const { build, remember, research } = await import("../lib/actions.mjs");
 const { goToPlace } = await import("../lib/embodiment.mjs");
+const { buildingDesign } = await import("../lib/buildings.mjs");
+test("generated rooms have walkable floors and an unobstructed doorway", () => {
+  const room = buildingDesign({id:"reading-house",name:"Reading house",purpose:"A quiet room",x:25,z:-20,width:8,depth:8,color:"#aabbcc",furnishing:"reading-room"});
+  assert(room.parts.length <= 24);
+  assert(room.parts.some(p => p.y+p.sy/2 <= 0.3 && p.sx === 8));
+  const blocksDoor = room.parts.some(p => p.y-p.sy/2 < 2.5 && p.y+p.sy/2 > 0.3 && Math.abs(p.x) < p.sx/2 + 0.4 && Math.abs(p.z-4) < p.sz/2 + 0.4);
+  assert.equal(blocksDoor, false);
+});
 const { publicSnapshot } = await import("../lib/github.mjs");
 const design = {
   id: "test-lantern",

@@ -681,6 +681,7 @@ function rebuildObjects() {
   if (signature === objectKey) return;
   objectKey = signature;
   disposeGroup(creations);
+  for (let i = rooms.length - 1; i >= 0; i--) if (rooms[i].generated) rooms.splice(i, 1);
   savedSolids = [];
   savedInteractions = [];
   for (const item of data.objects) {
@@ -688,6 +689,8 @@ function rebuildObjects() {
     const g = new THREE.Group();
     g.position.set(item.x, 0, item.z);
     creations.add(g);
+    const ceiling = new THREE.Group();
+    g.add(ceiling);
     if (item.category === "pet" && !item.parts.length) g.add(fox());
     for (const p of item.parts) {
       const geo =
@@ -698,9 +701,10 @@ function rebuildObjects() {
             : p.shape === "cylinder"
               ? new THREE.CylinderGeometry(0.5, 0.5, 1, 16)
               : new THREE.ConeGeometry(0.5, 1, 6);
-      const m = mesh(geo, p.color, p.x, p.y, p.z, g);
+      const m = mesh(geo, p.color, p.x, p.y, p.z,
+        item.category === "building" && p.y - p.sy / 2 >= 3.5 ? ceiling : g);
       m.scale.set(p.sx, p.sy, p.sz);
-      if (p.y - p.sy / 2 < 1.5) {
+      if (p.y - p.sy / 2 < 1.5 && p.y + p.sy / 2 > 0.3) {
         const rect = { x: item.x + p.x, z: item.z + p.z, w: p.sx, d: p.sz };
         if (
           !rooms.some(
@@ -712,6 +716,8 @@ function rebuildObjects() {
           savedSolids.push(rect);
       }
     }
+    const floor = item.category === "building" && item.parts.find(p => p.y + p.sy / 2 <= 0.3 && p.sx >= 5 && p.sz >= 5);
+    if (floor) rooms.push({name:item.name,cx:item.x+floor.x,cz:item.z+floor.z,w:floor.sx,d:floor.sz,roof:ceiling,generated:true});
     const bounds = new THREE.Box3().setFromObject(g),
       center = bounds.isEmpty()
         ? new THREE.Vector3(item.x, 0, item.z)
@@ -899,7 +905,8 @@ const landmarks = [
 function showMap() {
   const holder = panel("Find your way", "THE VALLEY");
   const grid = el("div", null, "landmarks");
-  for (const [name, description, x, z] of landmarks) {
+    const destinations = [...landmarks, ...rooms.filter(r => r.generated).map(r => [r.name, "A room built by Lumen", r.cx, r.cz + r.d / 2 - 1.2])];
+    for (const [name, description, x, z] of destinations) {
     const b = el("button");
     b.append(el("strong", name), el("small", description));
     b.onclick = () => walkTo(x, z, name);
@@ -1196,7 +1203,7 @@ function locate() {
     "The overlook": "Take a breath. Watch the valley grow.",
     "The pond": "A quiet place beside the water.",
     "The commons": "Follow the paths. The doors are open.",
-  }[name];
+  }[name] || "A room designed and built by Lumen. Come inside and explore.";
 }
 function findInteraction() {
   const movingLumen = {
