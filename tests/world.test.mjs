@@ -18,6 +18,35 @@ test("generated rooms have walkable floors and an unobstructed doorway", () => {
   assert.equal(blocksDoor, false);
 });
 const { publicSnapshot } = await import("../lib/github.mjs");
+const { planProject } = await import("../lib/projects.mjs");
+const { createHelper, consultHelper } = await import("../lib/helpers.mjs");
+test("unfinished autonomous plans are public but owner plans remain private", () => {
+  put("tasks", {id:"owner-plan",source:"owner"});
+  put("runtime", {id:"agent",taskId:"owner-plan"});
+  const p={id:"private-plan",title:"Private idea",description:"Personal",status:"planned",nextStep:"Review"};
+  planProject(p);
+  put("tasks", {id:"autonomous-plan",source:"autonomy"});
+  put("runtime", {id:"agent",taskId:"autonomous-plan"});
+  planProject({...p,id:"public-plan",title:"Community garden"});
+  planProject({...p,status:"working"});
+  assert(!publicSnapshot().projects.some(p=>p.id==="private-plan"));
+  assert(publicSnapshot().projects.some(p=>p.id==="public-plan" && p.status==="planned"));
+  assert.throws(()=>planProject({...p,status:"complete"}),/saved world object/);
+  put("runtime", {id:"agent"});
+});
+test("helper jobs save real responses and record failures without false completion", async () => {
+  createHelper({id:"designer",name:"Designer",specialty:"Review room layouts"});
+  const original=globalThis.fetch;
+  try {
+    globalThis.fetch=async()=>({ok:true,json:async()=>({message:{content:"Keep the doorway clear."}})});
+    const r=await consultHelper({id:"designer",task:"Review an entrance"});
+    assert.equal(r.result,"Keep the doorway clear.");
+    assert.equal(all("helperJobs").at(-1).status,"complete");
+    globalThis.fetch=async()=>{throw new Error("Model offline")};
+    await assert.rejects(consultHelper({id:"designer",task:"Try again"}),/Model offline/);
+    assert.equal(all("helperJobs").at(-1).status,"failed");
+  } finally { globalThis.fetch=original; }
+});
 const design = {
   id: "test-lantern",
   name: "Lantern",

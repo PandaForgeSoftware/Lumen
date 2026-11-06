@@ -23,6 +23,10 @@ Run `Install-Autostart.ps1` to add a Windows Startup shortcut. Remove the `Lumen
 
 ## What it can do today
 
+- Keep a persistent backlog of planned, working, blocked and completed projects. Autonomous plans and creations appear in `world/PROJECTS.md` on GitHub; owner-requested plans stay private.
+- Create up to eight named local AI helpers and ask them for design, analysis, review or writing advice. Helpers use separate calls to the same Ollama model, run one at a time, and cannot execute tools or spawn further helpers. Their task results stay local.
+- Run hidden after Windows sign-in via `Watch-Lumen.ps1`. The supervisor checks every 30 seconds and restarts a stopped web worker or Ollama. The worker retries its AI runtime and GitHub synchronization. Closing the world or ChatGPT does not stop it; sleep and shutdown suspend work.
+
 - Generate and save composite 3D designs, including structures, gardens, sculptures, paths and decorative companions.
 - Choose creative projects on a local timer and report actual completed creations.
 - Chat through a separate local Qwen model served by Ollama, using the Eve agent framework.
@@ -34,7 +38,7 @@ Run `Install-Autostart.ps1` to add a Windows Startup shortcut. Remove the `Lumen
 
 The visitor has wall and furniture collisions, enterable interiors and actual saved books on shelves. Lumen’s character walks to locations indicated by real tool activity; walking animations run while the world is open, while the AI can work with the browser closed. Pip’s behaviour is decorative.
 
-Microphone input, authenticated remote access from phones/tablets/other computers, device task routing, general desktop control, editing other projects, and tested self-modification are not implemented. Pets are animated virtual characters, not separate intelligent agents. Learning currently means saved preferences and notes, not retraining the model or developing consciousness.
+Microphone input, authenticated remote access from phones/tablets/other computers, device task routing, general desktop control, editing other projects, and tested self-modification are not implemented. Pets are animated virtual characters; named AI helpers are separate local model calls, not embodied characters. Learning currently means saved preferences and notes, not retraining the model or developing consciousness.
 
 ## Data and GitHub
 

@@ -12,6 +12,8 @@ const port = Number(process.env.PORT || 4317),
   agentPort = 4318;
 const client = new Client({ baseUrl: `http://127.0.0.1:${agentPort}` });
 let child = null,
+  lastRuntimeStart = 0,
+  lastSyncAttempt = 0,
   busy = false,
   currentSession = null,
   nextCreative = Date.now() + 60000;
@@ -40,6 +42,9 @@ async function ready() {
 }
 async function startRuntime() {
   if (await ready()) return;
+  if (child && child.exitCode === null && !child.killed) return;
+  if (Date.now() - lastRuntimeStart < 60000) return;
+  lastRuntimeStart = Date.now();
   child = spawn(
     process.execPath,
     [
@@ -97,6 +102,7 @@ async function work() {
   if (busy) return;
   busy = true;
   if (!(await ready())) {
+    await startRuntime();
     put("runtime", {
       id: "agent",
       status: "starting",
@@ -106,13 +112,14 @@ async function work() {
     busy = false;
     return;
   }
-  let task = all("tasks").find(
+  const queuedTasks = all("tasks").filter(t => t.status === "queued");
+  let task = queuedTasks.find(t => t.source === "owner") || queuedTasks.find(
     (t) =>
       t.status === "queued" && (t.source === "owner" || settings().autonomy),
   );
   if (!task && settings().autonomy && Date.now() >= nextCreative) {
     task = enqueue(
-      "It is your creative time. Read your world and memory, choose one small useful or beautiful addition yourself, and actually build it using build_object. Make a thoughtful composite design. Give it a name and explain why you chose it. Do not just describe a plan. /no_think",
+      "It is your independent work time. Read your world, memory, projects and helpers. Use plan_project to record a useful idea or update an existing project with its next step. Prefer unfinished projects. You may create_helper and consult_helper for design or review. Then perform one concrete step with build_building or build_object, or record honestly why blocked. Use the same project id when building so it becomes complete. Choose varied useful rooms, gardens and places to visit. Do not repeat old sculptures. Work within available tools. /no_think",
       "autonomy",
     );
   }
@@ -341,8 +348,16 @@ const timer = setInterval(
     }),
   5000,
 );
+// Publish backlog changes even when a session fails or the user is not viewing the world.
+const syncTimer = setInterval(async () => {
+  if (!settings().githubSync || Date.now() - lastSyncAttempt < 60000) return;
+  lastSyncAttempt = Date.now();
+  try { const { syncWorld } = await import("./lib/github.mjs"); await syncWorld(); }
+  catch (e) { event("GitHub sync will retry", e.message, "error"); }
+}, 60000);
 function shutdown() {
   clearInterval(timer);
+  clearInterval(syncTimer);
   child?.kill();
   server.close(() => process.exit(0));
   setTimeout(() => process.exit(0), 2000).unref();
