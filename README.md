@@ -4,7 +4,7 @@ A local AI companion with a persistent, explorable 3D world. Runs independently 
 
 ## Open your world
 
-Run **Open-Lumen.cmd**, then visit **http://127.0.0.1:4317**. Walk with WASD, drag to look, hold Shift to run, press E to interact and V to switch between first and third person. Use the Map to walk automatically to a destination. Enter the library through its open doorway and read physical book spines or use the reading table. Enter the workshop to use its project board and workbench. The cottage contains Lumen’s journal. Approach Lumen to talk, or press T. The musical-note button enables spoken replies using your browser's voice service.
+Run **Open-Lumen.cmd**, then visit **http://127.0.0.1:4317**. Explore through a camera with WASD, drag to look, hold Shift to move faster and press E to interact. There is no visitor avatar. Use the Map to walk automatically to a destination. Enter the library through its open doorway and read physical book spines or use the reading table. Enter the workshop to use its project board and workbench. The cottage contains Lumen’s journal. Approach Lumen to talk, or press T. The musical-note button enables spoken replies using your browser's voice service.
 
 Lumen chooses a small creative task every ten minutes while creation is enabled. Closing the browser tab does not stop the background app. Turning off the PC stops its work. Windows startup runs at sign-in, not before sign-in. Failed or interrupted requests remain in the journal; they are not silently marked completed.
 

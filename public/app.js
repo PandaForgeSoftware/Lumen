@@ -63,9 +63,9 @@ let savedSolids = [],
   bookKey = "",
   objectKey = "",
   messagesKey = "",
-  firstPerson = false,
+  firstPerson = true,
   yaw = 0,
-  pitch = 0.15,
+  pitch = 0,
   sitting = false,
   route = [],
   destinationName = "",
@@ -431,10 +431,8 @@ function person(color, glow = false) {
   g.userData = { legs, arms, body };
   return g;
 }
-const visitor = person("#597d7b"),
-  lumen = person("#a9ddc7", true);
-scene.add(visitor, lumen);
-visitor.position.copy(playerPos);
+const lumen = person("#a9ddc7", true);
+scene.add(lumen);
 lumen.position.set(9, 0, -5.6);
 const lumenTag = label("Lumen", 0, 2.5, 0, 1.5, lumen);
 const lumenLight = new THREE.PointLight("#a8ffd6", 2.5, 4);
@@ -704,6 +702,11 @@ function rebuildObjects() {
       const m = mesh(geo, p.color, p.x, p.y, p.z,
         item.category === "building" && p.y - p.sy / 2 >= 3.5 ? ceiling : g);
       m.scale.set(p.sx, p.sy, p.sz);
+      if (item.construction) {
+        m.userData.revealAt = item.construction.startedAt +
+          item.construction.durationMs * item.parts.indexOf(p) / Math.max(1, item.parts.length);
+        m.visible = Date.now() >= m.userData.revealAt;
+      }
       if (p.y - p.sy / 2 < 1.5 && p.y + p.sy / 2 > 0.3) {
         const rect = { x: item.x + p.x, z: item.z + p.z, w: p.sx, d: p.sz };
         if (
@@ -1045,14 +1048,6 @@ $("cancelWalk").onclick = () => {
   $("journey").hidden = true;
 };
 $("interactButton").onclick = () => nearest?.action();
-function toggleView() {
-  firstPerson = !firstPerson;
-  $("viewButton").textContent = firstPerson
-    ? "◉ Third person"
-    : "◉ First person";
-  visitor.visible = !firstPerson;
-}
-$("viewButton").onclick = toggleView;
 $("voice").onclick = () => {
   voice = !voice;
   if (!voice && "speechSynthesis" in window) speechSynthesis.cancel();
@@ -1101,7 +1096,6 @@ addEventListener("keydown", (e) => {
     if (key === "e") nearest?.action();
     if (key === "t") openChat();
     if (key === "m") showMap();
-    if (key === "v") toggleView();
   }
   keys.add(key);
   if (
@@ -1333,6 +1327,9 @@ for (const mesh of originalMeshes) {
 }
 const clock = new THREE.Clock();
 renderer.setAnimationLoop(() => {
+  creations.traverse(o => {
+    if (o.userData.revealAt) o.visible = Date.now() >= o.userData.revealAt;
+  });
   const dt = Math.min(clock.getDelta(), 1);
   elapsed += dt;
   const modal = $("panel").open || $("conversation").open;
@@ -1370,10 +1367,6 @@ renderer.setAnimationLoop(() => {
       }
     }
   }
-  visitor.position.copy(playerPos);
-  visitor.position.y = sitting ? -0.45 : 0;
-  visitor.rotation.y = yaw + Math.PI;
-  animatePerson(visitor, walking, elapsed);
   const lumBefore = lumen.position.clone();
   const lumMoving = follow(lumen.position, lumenRoute, 2.2, dt);
   if (lumMoving) {
