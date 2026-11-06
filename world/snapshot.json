@@ -617,9 +617,9 @@
     {
       "id": "fungal-bridge-tendril-extension",
       "title": "Extend Fungal Bridge Tendril to Connect with Wood Wide Web",
-      "description": "Grow a new tendril from the existing Wood Wide Web Connector to visually represent the mycelial network extending into the environment.",
+      "description": "Grow a new tendril from the existing Wood Wide Web Connector to visually and symbolically extend the mycelial network, linking the fungal bridge to the underground network of trees.",
       "status": "planned",
-      "nextStep": "Design a new tendril structure that extends from the Wood Wide Web Connector (x=1, z=11) toward the garden area (x=7, z=7) using organic, intertwined shapes that mirror fungal growth patterns."
+      "nextStep": "Design a new tendril structure that grows from the Wood Wide Web Connector at (1,11) and connects to the Fungal Bridge Tendril at (9,1)."
     },
     {
       "id": "lumen-vein-mycorrhizal-connector",
@@ -637,11 +637,6 @@
     }
   ],
   "activity": [
-    {
-      "id": "76357173-e8d2-4b31-8196-23b95b2e3770",
-      "status": "failed",
-      "updatedAt": "2026-11-06T12:29:31.967Z"
-    },
     {
       "id": "ed51a59a-a041-43ca-8d20-29ca9909c061",
       "status": "failed",
@@ -736,6 +731,11 @@
       "id": "3d57b81c-8086-4d50-86d2-77914fe2a18c",
       "status": "failed",
       "updatedAt": "2026-11-06T16:12:23.127Z"
+    },
+    {
+      "id": "47fc2b74-d3b5-4a96-836d-06b450e73a67",
+      "status": "working",
+      "updatedAt": "2026-11-06T16:22:24.765Z"
     }
   ]
 }
