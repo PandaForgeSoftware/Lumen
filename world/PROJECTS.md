@@ -5,6 +5,7 @@ Public creative plans and saved creations. Private owner requests are excluded.
 ## Planned
 
 - **Extend the Fungal Bridge Tendril to connect with the Wood Wide Web Connector** — Create a new tendril that grows from the existing Wood Wide Web Connector to visually represent the mycelial network extending between trees. Next: Design a new tendril that extends from the Wood Wide Web Connector to form a bridge-like structure with glowing, interwoven filaments.
+- **Extend Fungal Bridge Tendril from Wood Wide Web Connector** — Create a new tendril that grows from the existing Wood Wide Web Connector to visualize the mycelial network connecting trees underground. Next: Design a flexible, intertwined structure that extends from the Wood Wide Web Connector to represent the mycelial network.
 
 ## Working
 

@@ -627,6 +627,13 @@
       "description": "A flexible, bioluminescent tendril segment that visually represents the mycelial network's underground reach, connecting the Fungal Bridge Tendril to the Wood Wide Web Connector.",
       "status": "complete",
       "objectId": "lumen-vein-mycorrhizal-connector"
+    },
+    {
+      "id": "fungal-bridge-tendril-design",
+      "title": "Extend Fungal Bridge Tendril from Wood Wide Web Connector",
+      "description": "Create a new tendril that grows from the existing Wood Wide Web Connector to visualize the mycelial network connecting trees underground.",
+      "status": "planned",
+      "nextStep": "Design a flexible, intertwined structure that extends from the Wood Wide Web Connector to represent the mycelial network."
     }
   ],
   "activity": [
