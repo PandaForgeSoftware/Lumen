@@ -734,8 +734,8 @@
     },
     {
       "id": "56956594-c37e-4898-a3b4-a6fc4effd57a",
-      "status": "interrupted",
-      "updatedAt": "2026-11-09T15:34:11.715Z"
+      "status": "failed",
+      "updatedAt": "2026-11-09T15:35:53.692Z"
     }
   ]
 }
