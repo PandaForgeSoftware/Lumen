@@ -638,11 +638,6 @@
   ],
   "activity": [
     {
-      "id": "95939d55-fdfb-488c-a47c-761e85697a37",
-      "status": "failed",
-      "updatedAt": "2026-11-06T15:29:43.857Z"
-    },
-    {
       "id": "15a99217-a1a6-46cb-90c6-b6df6522d3c2",
       "status": "failed",
       "updatedAt": "2026-11-06T15:34:24.231Z"
@@ -736,6 +731,11 @@
       "id": "831d577d-840b-43c7-b600-750d0dfe4f47",
       "status": "failed",
       "updatedAt": "2026-11-09T11:02:02.950Z"
+    },
+    {
+      "id": "692eab1f-fd71-46c0-83ab-9e583554a2bf",
+      "status": "working",
+      "updatedAt": "2026-11-09T11:12:12.392Z"
     }
   ]
 }
